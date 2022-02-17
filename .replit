@@ -1,2 +1,62 @@
 language = "html"
 run = "git add . "
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+
+    <style>
+      .font {
+        font-size: 25px
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Create An Account</h1>
+    <form>
+      <div class="font">
+        <label for="first_name">First name</label>
+        <input id="first_name" required type="text"></input>
+        <br></br>
+        <label for="last_name">Last name</label>
+        <input id="last_name" required type="text"></input>
+        <br></br>
+        <label for="email">Email</label>
+        <input id="email" required type="email"></input>
+        <br></br>
+        <label for="username">Username</label>
+        <input id="username" required type="text"></input>
+        <br></br>
+        <label for="password">Password</label>
+        <input id="password" required type="password" minlength="10"></input>
+        <br></br>
+        <label for="birth_date">Birth date</label>
+        <input id="birth_date" required type="date"></input>
+        <br></br>
+        <label for="happy">How happy are you?</label>
+        <input id="happy" required type="range" min="0" max="10" step="1" value="5" list="tickmarks"></input>
+        <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        </datalist>
+        <br></br>
+        <label for="color">What is your fav.color?</label>
+        <input id="color" required type="color"></input>
+        <br></br>
+        <input type="submit" value="Create Account"></input>
+      </div>
+    </form>
+  </body>
+</html>
